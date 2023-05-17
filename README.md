@@ -21,7 +21,16 @@ $ conda install -c menpo glfw3
 ```
 2. When running your code, you will want to tell mujoco which backend to use. This can be done by setting the appropriate environment variables.
 ```
-pip install mujoco
+$ conda env config vars set MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
+$ conda deactivate && conda activate mujoco_env
+```
+3. export LD_LIBRARY_PATH to .bashrc:
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/s.achlatis/.mujoco/mujoco210/bin
+```
+4.
+
+```
 pip install mujoco-py
 ```
 3. Test that your mujoco works
