@@ -1,7 +1,8 @@
 # mujoco_cluster
 How to download mujoco on cluster:
 
-0.a. Download the MuJoCo version 2.1 binaries for [Linux](https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz). \n
+0.a. Download the MuJoCo version 2.1 binaries for [Linux](https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz).
+
 0.b. Extract the downloaded mujoco210 directory into ~/.mujoco/mujoco210.
 
 0.c Create conda environment
