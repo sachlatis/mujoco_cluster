@@ -7,22 +7,20 @@ How to download mujoco on cluster:
 
 0.c Create conda environment
 ```
-$ conda create -n mujoco_env python=3.9
-$ conda activate mujoco_env
-$ pip install mujoco
+conda create -n mujoco_env python=3.9
 ```
 1.Install libraries with conda (normally you could install them with sudo but not in a cluster)
 ```
-$ conda activate mujoco_env
-$ conda install -c conda-forge glew
-$ conda install -c conda-forge mesalib
-$ conda install -c anaconda mesa-libgl-cos6-x86_64
-$ conda install -c menpo glfw3
+conda activate mujoco_env
+conda install -c conda-forge glew
+conda install -c conda-forge mesalib
+conda install -c anaconda mesa-libgl-cos6-x86_64
+conda install -c menpo glfw3
 ```
 2. When running your code, you will want to tell mujoco which backend to use. This can be done by setting the appropriate environment variables.
 ```
-$ conda env config vars set MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
-$ conda deactivate && conda activate mujoco_env
+conda env config vars set MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
+conda deactivate && conda activate mujoco_env
 ```
 3. export LD_LIBRARY_PATH to .bashrc:
 ```
