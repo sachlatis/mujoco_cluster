@@ -82,3 +82,14 @@ After that you can download gym and all the dependencies:
 ```
 pip install gym[all]
 ```
+
+Test that gym works:
+
+```
+import gym
+env = gym.make("CartPole-v1")
+observation, info = env.reset(seed=42)
+action = env.action_space.sample()
+print(action)
+# 0 
+```
