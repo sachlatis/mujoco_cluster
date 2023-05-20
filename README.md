@@ -60,7 +60,6 @@ Regarding that:
 
 Lets find where the binary libGL is located:
 ```locate libGL```
-Return:
 ```
 # /usr/lib/x86_64-linux-gnu/libGL.so.1
 # /usr/lib/x86_64-linux-gnu/libGL.so.1.7.0
