@@ -1,5 +1,5 @@
 # mujoco_cluster
-How to download mujoco on cluster:
+How to download mujoco on cluster without sudo rights.
 
 0.a. Download the MuJoCo version 2.1 binaries for [Linux](https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz).
 
