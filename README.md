@@ -72,3 +72,9 @@ Suggest solution: Copy the libGL.so.1 library to the lib directory on your conda
 cp /usr/lib/x86_64-linux-gnu/libGL.so.1 $CONDA_PREFIX/lib
 ln -s $CONDA_PREFIX/lib/libGL.so.1 $CONDA_PREFIX/lib/libGL.so
 ```
+An other possible error: 
+```No such file or directory: 'patchelf'```
+Solution: ```pip install patchelf```
+
+
+See also this(:https://pytorch.org/rl/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html)
