@@ -77,4 +77,6 @@ An other possible error:
 Solution: ```pip install patchelf```
 
 
+See also this intrsuctions [Linux]([https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz](https://pytorch.org/rl/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html)).
+
 See also this(:https://pytorch.org/rl/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html)
