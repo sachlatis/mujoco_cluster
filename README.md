@@ -55,7 +55,20 @@ print(sim.data.qpos)
 ```
 
 After following all these steps you could have the following problem ```cannot find -lGL```
+
 Regarding that:
-Mujoco-py README says to create a symlink using the libs in /usr, but I would need sudo privileges.
-What I did was to copy the libGL.so.1 library to the lib directory on my conda env and then create a symlink there
-```ln -s libGL.so.1 libGL.so```
+
+Lets find where the binary libGL is located:
+```locate libGL```
+Return:
+```
+# /usr/lib/x86_64-linux-gnu/libGL.so.1
+# /usr/lib/x86_64-linux-gnu/libGL.so.1.7.0
+# ...
+```
+Mujoco-py README says to create a symlink using the libs in /usr, but it would need sudo privileges.
+Suggest solution: Copy the libGL.so.1 library to the lib directory on your conda env and then create a symlink there.
+```
+cp /usr/lib/x86_64-linux-gnu/libGL.so.1 $CONDA_PREFIX/lib
+ln -s libGL.so.1 libGL.so
+```
