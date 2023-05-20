@@ -77,3 +77,8 @@ An other possible error:
 Solution: ```pip install patchelf```
 
 See also (:https://pytorch.org/rl/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html)
+
+After that you can download gym and all the dependencies:
+```
+pip install gym[all]
+```
