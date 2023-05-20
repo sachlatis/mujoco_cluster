@@ -70,5 +70,5 @@ Mujoco-py README says to create a symlink using the libs in /usr, but it would n
 Suggest solution: Copy the libGL.so.1 library to the lib directory on your conda env and then create a symlink there.
 ```
 cp /usr/lib/x86_64-linux-gnu/libGL.so.1 $CONDA_PREFIX/lib
-ln -s libGL.so.1 libGL.so
+ln -s $CONDA_PREFIX/lib/libGL.so.1 $CONDA_PREFIX/lib/libGL.so
 ```
