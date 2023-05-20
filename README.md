@@ -54,7 +54,7 @@ print(sim.data.qpos)
 #  -2.22862221e-05]
 ```
 
-After following all these steps you could have the following problem ```cannot find -lGL```
+After following all these steps and the test falls you probably have the following problem ```cannot find -lGL```
 
 Regarding that:
 
