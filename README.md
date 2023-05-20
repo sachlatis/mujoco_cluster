@@ -66,6 +66,7 @@ Lets find where the binary libGL is located:
 # ...
 ```
 Mujoco-py README says to create a symlink using the libs in /usr, but it would need sudo privileges.
+
 Suggest solution: Copy the libGL.so.1 library to the lib directory on your conda env and then create a symlink there.
 ```
 cp /usr/lib/x86_64-linux-gnu/libGL.so.1 $CONDA_PREFIX/lib
