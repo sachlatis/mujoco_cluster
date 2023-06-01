@@ -93,3 +93,14 @@ action = env.action_space.sample()
 print(action)
 # 0 
 ```
+Accept roms:
+```
+pip install autorom[accept-rom-license]
+```
+
+Test that:
+
+```
+import gym 
+env = gym.make('Breakout-v4')
+```
