@@ -22,9 +22,19 @@ conda install -c menpo glfw3
 conda env config vars set MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
 conda deactivate && conda activate mujoco_env
 ```
-3. export LD_LIBRARY_PATH to .bashrc:
+3. export LD_LIBRARY_PATH to .bashrc (put your own path):
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/s.achlatis/.mujoco/mujoco210/bin
+```
+You can also do this step by directly updating the .bashrc file:
+```
+nano ~/.bashrc
+```
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/s.achlatis/.mujoco/mujoco210/bin
+```
+```
+source ~/.bashrc
 ```
 4.
 
@@ -104,3 +114,14 @@ Test that:
 import gym 
 env = gym.make('Breakout-v4')
 ```
+
+----
+
+Another possible error could occur if you are using cython version > 3:
+Check cython version by: 
+```
+import cython
+print(cython.__version__)
+```
+if its bigger than 3 then please download a smaller version, we have tested it for cython version 0.29.x
+
